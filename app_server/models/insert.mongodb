@@ -1,0 +1,73 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@volkanabaoglu 
+/
+mekanbul
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+mekanbul/app_server/models/insert.mongodb
+@volkanabaoglu
+volkanabaoglu 4. Derste yapılanlar
+Latest commit 666d472 yesterday
+ History
+ 1 contributor
+31 lines (31 sloc)  541 Bytes
+
+const database = 'mekanbul';
+use(database);
+db.mekanlar.insertOne(
+  {
+  "ad": "Starbucks",
+  "adres": "Centrum Garden AVM",
+  "puan": "4",
+  "imkanlar": [
+    "Dünya Kahveleri",
+    "Kekler",
+    "Pastalar"
+  ],
+  "koordinatlar": {
+    "enlem": "37.7",
+    "boylam": "30.5"
+  },
+  "saatler": [
+    {
+      "gunler": "Pazartesi-Cuma",
+      "acilis": "9:00",
+      "kapanis": "23:00",
+      "kapali": false
+    },
+    {
+      "gunler": "Cumartesi-Pazar",
+      "acilis": "10:00",
+      "kapanis": "22:00",
+      "kapali": false
+    }
+  ]
+})
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+mekanbul/app_server/models at 4.Ders · /mekanbulmekanbul/insert.mongodb at 4.Ders · /mekanbul
